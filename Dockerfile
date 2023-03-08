@@ -1,4 +1,4 @@
 FROM openjdk:8-alpine
 MAINTAINER hieutt
-COPY ./target/* personal.jar
+COPY ./target/*.jar personal.jar
 ENTRYPOINT ["java", "-jar", "/personal.jar"]
